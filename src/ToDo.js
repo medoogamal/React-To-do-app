@@ -46,6 +46,7 @@ const ToDo = () => {
     <div className="to-do">
       <form action="" onSubmit={additem}>
         <input
+          style={{marginRight: "5px",}}
           type="text"
           placeholder="Put you task"
           value={text}
