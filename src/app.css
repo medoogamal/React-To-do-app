@@ -1,12 +1,77 @@
-.button {
-  transform: translateX(10px);
-  cursor: pointer;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: skyblue;
+}
+.to-do {
+  width: 450px;
+  max-height: 600px;
+  margin: 0px auto;
+  padding: 30px 30px;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+.input[type="text"] {
+  margin-right: 5px;
+  padding: 10px 20px;
+  border: 3px solid rgb(58, 138, 170);
+  border-radius: 6px;
+  display: block;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-transform: capitalize;
+  flex: 1;
+}
+.input[type="text"]:focus {
+  outline: none;
+}
+input[type="submit"] {
+  display: block;
+  border: none;
+  background-color: rgb(176, 104, 243);
+  color: white;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  text-transform: capitalize;
+  flex: 0.25;
 }
 
-/* ul {
-  list-style: auto;
-} */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* li {
-  margin-bottom: 5px;
-} */
+ul li {
+  margin: 15px 0px;
+
+  background-color: rgb(156, 227, 255);
+  border-radius: 6px;
+  display: flex;
+  cursor: pointer;
+}
+ul li span {
+  display: block;
+  flex: 1;
+  margin: 10px 8px;
+  text-transform: capitalize;
+}
+ul li button {
+  display: block;
+  margin-right: 8px;
+  flex: 0.15;
+  border: none;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+  background-color: burlywood;
+  color: white;
+}

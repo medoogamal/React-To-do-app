@@ -46,7 +46,7 @@ const ToDo = () => {
     <div className="to-do">
       <form action="" onSubmit={additem}>
         <input
-          style={{marginRight: "5px",}}
+          className="input"
           type="text"
           placeholder="Put you task"
           value={text}
@@ -54,15 +54,9 @@ const ToDo = () => {
         />
         <input type="submit" value="add" />
       </form>
-      <ul style={{ listStyle: "auto" }}>
+      <ul>
         {items.map((item) => (
-          <li
-            key={item.key}
-            style={{
-              marginBottom: "5px",
-              cursor: "pointer",
-            }}
-          >
+          <li key={item.key}>
             <span
               onClick={() => check(item.key)}
               style={{
