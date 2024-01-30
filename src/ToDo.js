@@ -48,7 +48,7 @@ const ToDo = () => {
         <input
           className="input"
           type="text"
-          placeholder="Put you task"
+          placeholder="Put you task here"
           value={text}
           onChange={handleText}
         />
